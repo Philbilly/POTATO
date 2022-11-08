@@ -48,13 +48,13 @@ if ([_unit] call ACEFUNC(common,isMedic)) then {
 
     // Add kat medical to medics if the mod is enabled
     if (isClass(configFile >> "CfgPatches" >> "kat_main")) then {
-        if ((_configBackpackItems findIf {(_x select [0,10]) == "kat_X_AED"}) != -1) exitWith {}; // added via mission
+        if ((_configBackpackItems findIf {(_x select [0,10]) == "kat_chestseal"}) != -1) exitWith {}; // added via mission
         _katItems = [
-                        "kat_X_AED","kat_accuvac","kat_Pulseoximeter","kat_larynx:2","kat_aatKit:5","kat_guedel:5",
-                        "kat_stethoscope","kat_chestSeal:4","kat_IO_FAST:4","kat_IV_16:6",
-                        "ACE_adenosine:8","kat_Carbonate:4","kat_Painkiller:4","kat_nitroglycerin:4",
-                        "kat_norepinephrine:4","kat_phenylephrine:4","kat_TXA:4","kat_atropine:4",
-                        "kat_amiodarone:4","kat_naloxone:4","kat_lidocaine:4"
+                        "kat_accuvac","kat_Pulseoximeter","kat_larynx:2","kat_aatKit:10","kat_guedel:5",
+                        "kat_stethoscope","kat_chestSeal:10","kat_IO_FAST:5","kat_IV_16:15",
+                        "ACE_adenosine:8","kat_Carbonate","kat_Painkiller","kat_nitroglycerin:4",
+                        "kat_norepinephrine:4","kat_phenylephrine:4","kat_TXA:8,"kat_atropine:4",
+                        "kat_amiodarone:4","kat_naloxone","kat_lidocaine:4"
                     ];
     
         {
